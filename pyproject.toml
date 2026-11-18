@@ -1,0 +1,28 @@
+[project]
+name = "sidekick"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "ricardojoaomiranda@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=6.32.0",
+    "langchain>=1.5.0",
+    "langchain-community>=0.4.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openai>=1.8.1",
+    "langgraph>=1.2.22",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+sidekick = "sidekick:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
